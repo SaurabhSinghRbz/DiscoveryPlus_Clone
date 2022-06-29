@@ -1,0 +1,192 @@
+#Navbar{
+    display: flex;
+    background-color: black;
+    height:70px;
+    width: 100%;
+    position: fixed;
+    gap:20px;
+    margin-bottom: 150px;
+
+}
+#Pages{
+    display: flex;
+}
+#Pages div a{
+  color: white;
+}
+#Logo img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 170px;
+    
+}
+#Pages div a { 
+   margin: 10px;
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font: inherit;
+   font-size: 100%;
+   vertical-align: baseline;
+  
+}
+#Navbar div{
+    margin:10px 10px 10px 10px;
+}
+#Searchbar input{
+    width: 360px;
+    background-color: transparent;
+    outline: none;
+    font-size: 16px;
+    margin-right: -5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.3px solid #6c727a;
+    margin-top: 10px;
+    padding-right: 38px;
+    margin-left: 90px;
+}
+#SignIn div button{
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+    margin-right: 5px;
+    margin-left: 0px;
+    justify-content: flex;
+    font-family: "Roboto-Regular", sans-serif;
+}
+#Searchbar {
+    display: flex;
+    justify-content: space-between;
+}
+#Searchbar div{
+    justify-content: centers;
+}
+#VideoBox{
+ display:  flex;
+ height: 450px;
+ width: 90%;
+ margin: auto;
+ background-color: black;
+
+ 
+}
+
+.Card_Detail{
+    width: 35%;
+    border: 1px solid black;
+ 
+    
+}
+p{
+    padding-top: 14px;
+    font-size: 18px;
+    line-height: 1.33;
+    color: #9ba1a9;
+    color: var(--neutral-7);
+    font-family: "Roboto-Regular", sans-serif;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+}
+.card_head {
+    display: flex;
+    margin-top: -4px;
+    
+}
+.card_head h6{
+    background: rgb(40, 46, 61);
+    margin: 10px;
+}
+    
+
+.play_button{
+    display: flex;
+}
+h1{
+    font-family: "Roboto-Bold", sans-serif;
+    font-weight: bold;
+    line-height: 1.1;
+    color: white;
+    
+    font-size: 35px;
+}
+p{
+    padding-top: 14px;
+    font-size: 18px;
+    line-height: 1.33;
+    color: #9ba1a9;
+    margin-top: -9px;
+    font-family: "Roboto-Regular", sans-serif;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+}
+
+.card_Image img{ 
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+.first{
+    display: flex;
+    flex-shrink: 0;
+    width: 110%;
+    margin-top: 50px;
+    background-color: black;
+    
+
+}
+#main1{
+
+}
+.Play_button{
+    display: flex;
+}
+.Play_button div h2{
+   color: white;
+}
+.Play_button div{
+    margin: 10px;
+}
+#mainbox{
+    background-color: black;
+
+}
+.arrow_left{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    width: 38px;
+    z-index: 2;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.3s all;
+    opacity: 0;
+}
+.arrow_right{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    width: 38px;
+    z-index: 2;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.3s all;
+    opacity: 0;
+}
