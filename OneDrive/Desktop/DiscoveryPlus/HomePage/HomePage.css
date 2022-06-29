@@ -1,0 +1,164 @@
+#Navbar{
+    display: flex;
+    background-color: black;
+    height: 70px;
+    padding: 0 16px;
+    max-width: 1440px;
+    margin: 0 auto;
+    
+}
+#Navbar div{
+    margin:15px;
+}
+#Pages{
+   
+   display: flex;
+   justify-content: space-around;
+   
+   
+   
+   
+}
+
+
+#Pages div a{
+
+    color: grey;
+    text-decoration: none;
+    font: inherit;
+ 
+    
+}
+#Logo img{
+ width: 140px;
+ height: 40px;
+}
+ #Searchbar input{
+    width:360px;
+    background-color: transparent;
+    outline: none;
+    font-size: 16px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-left: 100px;
+    margin-top: 10px;
+    
+    
+}
+#SignIn button{
+    font-family: "Roboto-Regular", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    background-color: blue;
+   
+    width: 80px;
+    height: 40px;
+    color: white;
+}
+#searchicon{
+    border: 1px solid salmon;
+    margin-right: 100px;
+}
+#VideoBox{
+    display: flex;
+    background-color: black;
+    
+}
+#videoBox a{
+    display: flex;
+}
+#Videos{
+    display: flex;
+}
+.first{
+    margin: 50px 50px 50px 50px;
+    display: flex;
+    width:90%;
+     
+  
+    height: 450px;
+    flex-shrink: 0;
+
+}
+.first .Card_Detail{
+    width:30%;
+    border: 1px solid black;
+}
+.first .card_Image{
+    width:70%;
+    border: 1px solid black;
+}
+.first .card_Image img{
+    width:100%;
+    height: 100%;
+    
+}
+.Card_Detail{
+    color:white;
+}
+.card_head{
+    display: flex;
+   gap:10px;
+   margin-top:-15px;
+
+}
+.Card_Detail h1{
+    font-family: "Roboto-Bold", sans-serif;
+    font-weight: bold;
+    line-height: 1.1;
+    color: #ffffff;
+    color: var(--neutral-10);
+    font-size: 40px;
+    
+}
+.Card_Detail p{
+    font-family: "Roboto-Regular", sans-serif;
+    color: gray;
+    font-size:18px;
+}
+.card_head h6{
+    background: rgb(40, 46, 61);
+  padding: 5px;
+  margin-left: 1px;
+  color: grey;
+}
+.Play_button{
+    display: flex;
+    color: white;
+    margin-top:-15px;
+}
+.Play_button div{
+    margin: 10px;
+}
+.Image_box{
+    display: flex;
+    background-color: black;
+}
+.arrow_left{
+     height: 20px;
+     
+    position: relative;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    z-index: 6;
+    cursor: pointer;
+    opacity: 0;
+    margin-bottom: 12px;
+    margin-left: -10px;
+}
+.styles-arrowIcon-vHDIpvAh{
+    width: 24px;
+    height: auto;
+}
+
+
+
+
+
+
+
