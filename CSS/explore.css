@@ -90,7 +90,7 @@
 }
 
 #channelBox>div {
-    border: 1px solid white;
+    /* border: 1px solid white; */
     height: 120px;
     border-radius: 5px;
 }
@@ -100,7 +100,12 @@
 }
 
 #showsBox>div {
-    border: 1px solid white;
+    /* border: 1px solid white; */
     height: 300px;
     border-radius: 5px;
+}
+
+div>img {
+    height: 100%;
+    width: 100%;
 }
