@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Data</title>
+    <style>
+        body{
+            background-color: #1a1c21;
+            color: white;
+        }
+        #firstpart{
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            margin-top: 6%;
+        }
+        #firstpart>form>input{
+            height: 30px;
+            width: 200px;
+            text-align: center;
+            border-radius: 10px;
+            background-color: #121317;
+            border: 1px solid #383e47;
+            color: white;
+            
+        }
+        #secondpart{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 1%;
+        }
+        #secondpart>input{
+            background-color: #121317;
+            border: 1px solid #383e47;
+            color: white;
+            margin-top: 20px;
+            height: 30px;
+            width: 95px;
+            text-align: center;
+            border-radius: 10px;
+            
+        }
+        
+        p{
+            font-weight: bolder;
+            color: white;
+        }
+        h1{
+            color: white;
+        }
+        #main{
+            background-color: #121317;
+            border: 1px  ;
+            padding: 10px;
+            width: 400px;
+            margin: auto;
+        }
+       .submit{
+            width: 60%;
+            font-weight: bolder;
+            color: white;
+            background-color: #121317;
+            border-radius: 10px;
+            height: 35px;
+            text-align: center;
+            border: 1px solid #383e47;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="firstpart">
+            <h1>Payment Details</h1>
+            <form>
+                <p>NAME:</p>
+                <input type="text" placeholder="Enter Name" id="name">
+                <p>Card Number:</p>
+                <input type="number" placeholder="**** **** **** ****" id="cardnumber">
+           
+        <div id="secondpart">
+            <input type="number" placeholder="Expiry Year" id="expiry">
+            <input type="number" placeholder="CVV" id="cvv">
+        </div>
+        <br><br>
+        <a href="./otp.html">
+        <input type="submit" value="Payment" class="submit"></a>
+            </form>
+        </div>
+        </div>
+</body>
+<script>
+    document.querySelector("form").addEventListener("submit",function(){
+        event.preventDefault();
+        
+        var cardnumber = document.getElementById("cardnumber").value;
+        if(cardnumber && cardnumber.length == 16){
+            alert("OTP Sent")
+        
+        }else{
+            alert("Invalid Card Detail")
+        }
+    })
+
+
+
+
+</script>
+</html>
