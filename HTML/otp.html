@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Data</title>
+    <style>
+        #container{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 5%;
+        }
+
+        button{
+            margin-left: 60px;
+        }
+
+        p{
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <form>
+            <p>OTP:</p>
+            <input type="number" placeholder="Enter OTP" id="otp">
+            <br><br>
+            <button id="submit">Verify</button>
+        </form>
+    </div>
+</body>
+<script>
+    document.querySelector("form").addEventListener("submit",function(){
+        event.preventDefault();
+        var OTP = document.getElementById("otp").value;
+        if(OTP==1234){
+            alert("Wrong OTP")
+        }else{
+            alert("Payment Successful")
+           
+        }
+    })
+</script>
+</html>
