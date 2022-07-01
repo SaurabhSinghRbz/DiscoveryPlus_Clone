@@ -3,16 +3,16 @@
     background-color: black;
     height:70px;
     width: 100%;
-    position: fixed;
+   
     gap:20px;
-    margin-bottom: 150px;
+   
 
 }
 #Pages{
     display: flex;
 }
 #Pages div a{
-  color: white;
+  color:  grey;
 }
 #Logo img{
     display: flex;
@@ -30,6 +30,7 @@
    font: inherit;
    font-size: 100%;
    vertical-align: baseline;
+   
   
 }
 #Navbar div{
@@ -49,7 +50,7 @@
     padding-right: 38px;
     margin-left: 90px;
 }
-#SignIn div button{
+#SignIn button{
     background-color: blue;
     color: white;
     padding: 5px;
@@ -73,6 +74,7 @@
  width: 90%;
  margin: auto;
  background-color: black;
+
 
  
 }
@@ -146,9 +148,7 @@ p{
     
 
 }
-#main1{
 
-}
 .Play_button{
     display: flex;
 }
@@ -190,3 +190,109 @@ p{
     transition: 0.3s all;
     opacity: 0;
 }
+.Image_box{
+    margin-top: -40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+}
+.child{
+   width: 20%;
+   margin-left: 10px;
+   margin-right: 10px;
+   display: none;
+
+}
+.child img{
+    height: 150px;
+    width: 100%;
+    border-radius: 8px;
+}
+#left_arrow,#right_arrow{
+    margin-left:12px;
+    width: 3%;
+    display: inline-block 
+}
+#left_arrow button,#right_arrow button{
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+}
+#third_title  {
+    color: white;
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    margin-left: 10px;
+    margin-bottom: -15px;
+    margin-top: 20px;
+
+}
+.third{
+   margin-top: -150px;
+}
+#third_Video{
+    display: flex;
+    margin-top: 5px;
+
+}
+#third_Video div{
+ width: 25%;
+ margin: 10px;
+}
+#third_Video div img{
+    width: 100%;
+}
+#fourth_title  {
+    color: white;
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    margin-left: 10px;
+    margin-bottom: -15px;
+    margin-top: 20px;
+
+}
+.fourth{
+  
+}
+#fourth_Video{
+    display: flex;
+    margin-top: 9px;
+
+}
+#fourth_Video div{
+ width: 25%;
+ margin: 10px;
+ border-radius: 8px;
+ 
+}
+#fourth_Video div img{
+    width: 100%;
+}
+#fifth_title{
+    color: white;
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    margin-left: 10px;
+    margin-bottom: -15px;
+    margin-top: 20px;
+}
+#fifth_Video div{
+ width: 17%;
+ margin: 5px;
+ height: 400px;
+}
+#fifth_Video div img{
+    width: 100%;
+    height: 300px;
+}
+#fifth_Video{
+    display: flex;
+
+
+}
+
+
