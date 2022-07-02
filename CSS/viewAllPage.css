@@ -202,132 +202,30 @@
 }
 
 
-
 /* container part --> */
+
+#mainContainer {
+    padding: 2%;
+    background-color: #070708;
+}
+
 #container {
-    background-color: #1A1C21;
-    height: auto;
-    /* border: 1px solid red; */
-}
-
-
-#carouselBox {
-    width: 90%;
-    height: 75%;
-    margin: auto;
-    /* border: 1px solid blue; */
-}
-
-.swiper-slide {
-    display: flex;
-    height: auto;
-}
-
-.swiper-slide>div {
-    width: 100%;
-    /* border: 1px solid red; */
-    margin: auto;
-}
-
-.swiper-slide>div>h1 {
-    font-size: 40px;
-    margin-left: 10px;
-}
-
-
-
-.swiper-slide>div>p {
-    font-size: 20px;
-    color: grey;
-    margin: 10px 0px;
-    padding-left: 10px;
-}
-
-.viewAll {
-    margin-bottom: 10px;
-}
-
-.viewAll>:first-child {
-    font-size: 25px;
-    font-weight: bold;
-}
-
-.viewAll>:last-child {
-    font-size: 18px;
-    color: grey;
-}
-
-.viewAll>:last-child:hover {
-    cursor: pointer;
-    color: white;
-}
-
-.swiper-button-next:after,
-.swiper-button-prev:after {
-    font-family: swiper-icons;
-    letter-spacing: 0px;
-    line-height: 1;
-    text-transform: none !important;
-    font-variant: initial;
-    --swiper-navigation-size: 20px;
-    color: wheat;
-}
-
-
-
-
-#herosBox {
-    margin: 2% 5%;
-    height: auto;
-}
-
-
-
-h2 {
-    margin: 10px 0px;
-    color: white;
-}
-
-/* .swiper-slide {
-    height: 100px;
-} */
-
-#herosId img {
-    /* height: 100px; */
-    width: 190px;
-    border-radius: 10px;
-}
-
-.rowImageBox {
-    color: white;
-    margin: 2% 3%;
-    height: auto;
-    /* border: 1px solid yellow; */
-}
-
-#container>:last-child {
-    margin-bottom: 0%;
-}
-
-.rowImageBox p {
-    color: grey;
-    font-size: 15px;
-}
-
-.rowImageBox>div {
-    height: auto;
     display: grid;
+    height: auto;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px;
+
+    /* border: 2px solid blue; */
 }
 
-#sixImgBox>div {
-    grid-template-columns: repeat(6, 1fr);
-}
-
-
-
-.rowImageBox img {
+#container>div {
+    /* border: 1px solid red; */
     width: 100%;
+    height: auto;
+}
+
+#container>div>img {
     border-radius: 10px;
+    width: 100%;
+    height: 100%;
 }
