@@ -1,0 +1,231 @@
+* {
+
+    color: white;
+    padding: 0px;
+    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* navBar --> */
+
+#Navbar {
+    display: flex;
+    background-color: black;
+    height: 70px;
+    width: 100%;
+    gap: 20px;
+
+
+}
+
+#Pages {
+    display: flex;
+}
+
+#Pages div a {
+    color: grey;
+}
+
+#Logo img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 170px;
+
+}
+
+#Pages div a {
+    margin: 10px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+
+
+}
+
+#Navbar div {
+    margin: 10px 10px 10px 10px;
+}
+
+#Searchbar input {
+    width: 360px;
+    background-color: transparent;
+    outline: none;
+    font-size: 16px;
+    margin-right: -5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 0.3px solid #6c727a;
+    margin-top: 10px;
+    padding-right: 38px;
+    margin-left: 90px;
+}
+
+#SignIn button {
+    background-color: blue;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+    text-align: center;
+    margin-right: 5px;
+    margin-left: 0px;
+    justify-content: flex;
+    font-family: "Roboto-Regular", sans-serif;
+}
+
+#Searchbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#Searchbar div {
+    justify-content: centers;
+}
+
+
+
+
+
+
+/* navbar ended */
+
+
+/* footer style properties --> */
+
+#footer {
+    height: auto;
+    background-color: #121317;
+    color: gray;
+    font-size: 15px;
+}
+
+#footerUpBox {
+    display: flex;
+    border-bottom: 2px solid grey;
+    padding-top: 25px;
+    margin: 0px 25px;
+}
+
+#footerUpBox>div {
+    width: 50%;
+}
+
+#footerUpBox>:last-child {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+
+}
+
+#footerUpBox>:last-child>#followLink {
+    /* border: 1px solid white; */
+    width: 100px;
+    margin: 0%;
+    display: block;
+}
+
+#followLink>:last-child {
+    display: flex;
+}
+
+#footerLink>img {
+    border-radius: 5px;
+    margin: 5px;
+    height: 40px;
+    width: 40px;
+}
+
+#followLink>:first-child,
+#appLink>:first-child {
+    margin-left: 15px;
+}
+
+#footerUpBox>:last-child>#appLink {
+    /* border: 1px solid white; */
+    width: 300px;
+    margin: 0%;
+    display: block;
+}
+
+#appLink>:last-child {
+    display: flex;
+}
+
+#appLink>:last-child>img {
+    border-radius: 5px;
+    margin: 5px;
+    height: 40px;
+    width: 120px;
+}
+
+#footerUpBox>div>p {
+    margin-bottom: 10px;
+}
+
+#footerUpBox>div>div {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+
+
+#footerBottomBox {
+    display: flex;
+}
+
+#footerBottomBox>:first-child {
+    margin: 15px 25px;
+    display: flex;
+    width: 20%;
+}
+
+#footerBottomBox>:first-child {
+    justify-content: space-between;
+}
+
+#footerBottomBox>:last-child {
+    width: 80%;
+    text-align: right;
+    margin: 15px 20px;
+}
+
+.footerPointer:hover {
+    color: white;
+    cursor: pointer;
+}
+
+
+/* container part --> */
+
+#mainContainer {
+    padding: 2%;
+    background-color: #070708;
+}
+
+#container {
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+
+    /* border: 2px solid blue; */
+}
+
+#container>div {
+    /* border: 1px solid red; */
+    width: 100%;
+    height: auto;
+}
+
+#container>div>img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
