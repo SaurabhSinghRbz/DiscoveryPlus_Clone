@@ -339,3 +339,111 @@ p {
 
 
 }
+
+
+
+/* footer style properties --> */
+
+#footer {
+    height: auto;
+    background-color: #121317;
+    color: gray;
+    font-size: 15px;
+}
+
+#footerUpBox {
+    display: flex;
+    border-bottom: 2px solid grey;
+    padding-top: 25px;
+    margin: 0px 25px;
+}
+
+#footerUpBox>div {
+    width: 50%;
+}
+
+#footerUpBox>:last-child {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+
+}
+
+#footerUpBox>:last-child>#followLink {
+    /* border: 1px solid white; */
+    width: 100px;
+    margin: 0%;
+    display: block;
+}
+
+#followLink>:last-child {
+    display: flex;
+}
+
+#footerLink>img {
+    border-radius: 5px;
+    margin: 5px;
+    height: 40px;
+    width: 40px;
+}
+
+#followLink>:first-child,
+#appLink>:first-child {
+    margin-left: 15px;
+}
+
+#footerUpBox>:last-child>#appLink {
+    /* border: 1px solid white; */
+    width: 300px;
+    margin: 0%;
+    display: block;
+}
+
+#appLink>:last-child {
+    display: flex;
+}
+
+#appLink>:last-child>img {
+    border-radius: 5px;
+    margin: 5px;
+    height: 40px;
+    width: 120px;
+}
+
+#footerUpBox>div>p {
+    margin-bottom: 10px;
+}
+
+#footerUpBox>div>div {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+
+
+#footerBottomBox {
+    display: flex;
+}
+
+#footerBottomBox>:first-child {
+    margin: 15px 25px;
+    display: flex;
+    width: 20%;
+}
+
+#footerBottomBox>:first-child {
+    justify-content: space-between;
+}
+
+#footerBottomBox>:last-child {
+    width: 80%;
+    text-align: right;
+    margin: 15px 20px;
+}
+
+.footerPointer:hover {
+    color: white;
+    cursor: pointer;
+}
