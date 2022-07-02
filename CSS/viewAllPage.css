@@ -203,6 +203,9 @@
 
 
 /* container part --> */
+img:hover {
+    cursor: pointer;
+}
 
 #mainContainer {
     padding: 2%;

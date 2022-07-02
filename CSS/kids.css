@@ -190,18 +190,24 @@
     justify-content: space-between;
 }
 
-#footerBottomBox>:last-child {
+/* #footerBottomBox>:last-child>a {
     width: 80%;
     text-align: right;
     margin: 15px 20px;
+} */
+a {
+    color: grey;
+    text-decoration: none;
 }
 
-.footerPointer:hover {
+a:hover {
     color: white;
+
+}
+
+img:hover {
     cursor: pointer;
 }
-
-
 
 /* container part --> */
 #container {
