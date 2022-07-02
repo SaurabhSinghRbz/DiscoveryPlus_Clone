@@ -234,6 +234,8 @@
     margin-left: 10px;
 }
 
+
+
 .swiper-slide>div>p {
     font-size: 20px;
     color: grey;
@@ -241,6 +243,24 @@
     padding-left: 10px;
 }
 
+.viewAll {
+    margin-bottom: 10px;
+}
+
+.viewAll>:first-child {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.viewAll>:last-child {
+    font-size: 18px;
+    color: grey;
+}
+
+.viewAll>:last-child:hover {
+    cursor: pointer;
+    color: white;
+}
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
