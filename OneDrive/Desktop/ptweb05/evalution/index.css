@@ -1,0 +1,11 @@
+#Navbar{
+    display: flex;
+    width: 100%;
+    border: 1px solid black;
+    height:70px;
+}
+#Navbar div{
+    margin: 30px;
+ justify-content: space-around;
+ justify-content: center;
+}

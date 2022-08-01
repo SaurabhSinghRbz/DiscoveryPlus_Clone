@@ -1,0 +1,26 @@
+#Navbar{
+    height:70px;
+    width: 90%;
+    margin: auto;
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-end;
+}
+#Navbar div{
+   
+    margin: 30px;
+ 
+
+}
+a{
+    justify-content: right;
+}
+#main{
+    border: 1px solid blue;
+    width: 95%;
+    height:700px;
+}
+#slideshow_container{
+    margin:auto;
+    width:50%;
+}

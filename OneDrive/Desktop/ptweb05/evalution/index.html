@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HomePage</title>
+      <link rel="stylesheet" href="./index.css">
+    </head>
+
+
+
+    <body>
+      
+    <div id="Navbar">
+     <div>
+        <a href="./index.html">Home</a>
+     </div>
+      <div>
+        <a href="./Search.html">Search</a>
+      </div>
+   
+    </div>
+     <h1>homepage</h1>
+     <button onclick="showlist()">Show the list</button>
+     <div id="container">
+
+     </div>
+
+    </body>
+    <script>
+     let container=document.getElementById("container");
+ 
+ async function showlist(){
+  try{
+  
+   let url=`https://api.openbrewerydb.org/breweries?per_page=10`;
+   let res= await fetch(url)
+   let data=await res.json()
+   console.log(data)
+ 
+     displaydata(data)
+ 
+   
+
+  }catch(err){
+   console.log(err)
+  }
+  function displaydata(brew){
+   container.innerHTML="";
+   var Brewery=document.createElement("div");
+
+  
+   var id=document.createElement("p");
+   id.textContent=`id : ${brew.id}`
+   var name=document.createElement("p");
+   name.textContent=`name : ${brew.name}`
+   var brewery_type=document.createElement("p");
+   brewery_type.textContent=`Type: ${brew.brewery_type}`
+   var city=document.createElement("p");
+   city.textContent=`city: ${brew.city}`
+   var state=document.createElement("p");
+   state.textContent=`state : ${brew.state}`
+   var country=document.createElement("p");
+   country.textContent=`country : ${brew.country}`
+   Brewery.append(id,name,brewery_type,city,state,country)
+   container.append(Brewery)
+  
+  
+     // id ,name, brewery_type, city, state, country
+    
+
+
+  }
+   
+ }  
+  
+     
+     
+
+
+   
+    
+  
+    </script>
+</html>

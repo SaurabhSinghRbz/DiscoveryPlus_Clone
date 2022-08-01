@@ -1,0 +1,56 @@
+#searchInput{
+    display : block;
+    width : 30%;
+    margin: auto;
+    height : 40px;
+    outline : none;
+    border: 1px solid teal;;
+    border-radius : 5px;
+    font-size : 20px;
+    padding-left : 8px;
+}
+
+#searchBox{
+    width : 30%;
+    height : 300px;
+    overflow-y: auto; 
+    display : none;
+    position : absolute;
+    box-shadow : 0 1px 3px #eee;
+    z-index: 2;
+    left : 35%;
+    background : #2F4F4F;
+    color : white;
+    font-size : 20px;
+    padding-left : 8px;
+
+
+}
+
+#movieContainer{
+    width : 80%;
+    margin : auto;
+    margin-top : 60px;
+    display : grid;
+    grid-template-columns : repeat(4 , 1fr);
+    gap : 20px;
+}
+
+#movieContainer > div{
+    box-shadow : 0 1px 3px #eee;
+    font-size : 20px;
+}
+
+#movieDetails{
+    width : 30%;
+    height : 300px;
+    overflow-y: auto; 
+    display : none;
+    position : absolute;
+    box-shadow : 0 1px 3px #eee;
+    background: teal;
+    color : white;
+    font-size : 20px;
+    text-align : center;
+
+}

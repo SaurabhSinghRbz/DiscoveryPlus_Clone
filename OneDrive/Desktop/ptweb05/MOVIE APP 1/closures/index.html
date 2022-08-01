@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>imdb </title>
+       <style>
+        #query{
+          width:300px;
+          padding-bottom: 10px;;
+        }
+        #movies{
+          width:300px;
+          height: 250px;
+          border-left: 1px solid black;
+          border-right: 1px solid black;
+          overflow-y: scroll; 
+                }
+       </style>
+    </head>
+
+    <body>
+       
+  <input type="text" id="query"
+  placeholder="Search ..." oninput="debounce(main,1000)">
+  <div id="movies">
+
+  </div>
+
+    </body>
+    <script>
+     let API_KEY="440f450b";
+     let movieContainer=document.getElementById("movies")
+      async function searchMovie(){
+        try {
+            let movie =document.getElementById("query").value;
+            let url=`http://www.omdbapi.com/?apikey=${API_KEY}&s=${movie}`
+            let res= await fetch(url);
+            let data=await res.json()
+            return (data)
+        } catch (err) {
+            console.log(err)
+        }
+      }
+        async function main(){
+    try {
+        let data=await searchMovie()
+        if(data.Response==="False"){
+          return false;
+        }
+        displaydata(data.Search)
+    } catch (err) {
+       console.log(err) 
+    }
+  }function displaydata(movieList){
+    movieContainer.innerHTML="";
+    movieList.forEach((movie) =>{
+      let movieTitleelem=document.createElement("p");
+      movieTitleelem.textContent=movie.Title;
+      movieContainer.append(movieTitleelem)
+    })
+
+  }
+  let  timerid;
+  function debounce(func,delay){
+    if(timerid){
+      clearTimeout(timerid)
+    }
+    timerid=setTimeout(function (){
+      func()
+    },delay);
+
+  }
+    </script>
+
+</html>

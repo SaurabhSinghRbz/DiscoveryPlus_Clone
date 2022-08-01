@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translated</title>
+   <style>
+    #translate_btn{
+        padding: 7px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: block;
+    }
+    #input_text{
+        width: 90%;
+        height:80%;
+    }
+    #container{
+        min-height: 500px;
+        display: flex;
+    }
+    #Input_section,
+    #Output_section{
+       flex: 1;
+       border:1px solid #cecece;
+       margin: 5px;
+
+
+    }
+   </style>
+</head>
+<body>
+<div id="container">
+  <div id="Input_section">
+    <button id="tanslate_btn" onclick="Translatedtext()">Translate Text</button>
+    <textarea id="input_text">
+
+    </textarea>
+  </div>
+    <div id="Output_section">
+
+  <p id="output_text">
+
+  </p>
+    </div>
+</div>
+  
+ 
+</body>
+<script >
+ let translatedelem= document.getElementById("output_text");
+ async function Translatedtext(){
+    try {
+        let inputtext=document.getElementById("input_text").value;
+
+    const res = await fetch("https://libretranslate.de/translate", {
+	method: "POST",
+	body: JSON.stringify({
+		q: "",
+		source: "en",
+		target: "hi",
+		format: "text"
+	}),
+	headers: { "Content-Type": "application/json" },
+    
+});
+let data= await res.json()
+console.log(data)
+    } catch (error) {
+
+ console.log(err)
+        
+    }
+ }
+
+</script>
+</html>

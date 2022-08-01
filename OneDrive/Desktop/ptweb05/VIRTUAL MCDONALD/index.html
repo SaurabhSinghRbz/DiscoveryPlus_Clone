@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtual Mcdonald</title>
+    <style>
+     #container1{
+        width :30%;
+        height:500px;
+        border: 1px solid black;
+     }
+     #container2{
+        width:70%;
+        height: 500px;
+        border:1px solid black;
+    }
+    h1{
+        text-align: center;
+    }
+    #main{
+        display:flex;
+    }
+    h2{
+      text-align: center;
+    }
+    </style>
+  </head>
+  <body>
+   <h1>Virtual Mcdonald</h1>
+   <div id="main">
+    <div id="container1"> 
+        <h2>Menu List</h2>
+     <form  id="Order_menu">
+    <input src="https://s7d1.scene7.com/is/image/mcdonalds/burgers_300x300:category-panel-left-desktop" type="checkbox" name="burger" id="burger"
+    value="Burger">
+    <label for="burger" >Burger</label><br>
+    <input src="https://s7d1.scene7.com/is/image/mcdonalds/breakfast_300x300:category-panel-left-desktop"type="checkbox" name="noodle" id="noodle" value="Noodle">
+    <label for="noodle" >Noodle</label><br>
+    
+    <input src="https://s7d1.scene7.com/is/image/mcdonalds/drinks_300x300:category-panel-left-desktop" type="checkbox" name="pizza" id="pizza" value="Pizza">
+    <label for="pizza" >Pizza</label><br>
+    
+</form>
+    
+  
+<button onclick="Orderfood()">Order Food</button>
+ 
+     </div>
+     <div id="container2">
+      <h2>Food items</h2>
+      <div id="Image_Section">
+
+      </div>
+     </div>
+     </div>
+  </body>
+  <script>
+
+  function Orderfood(){
+  var Orderdata=JSON.parse(localStorage.getItem("orderdata")) || [];
+  Orderdata.forEach((ele,i)=>{
+    var box=document.createElement("div");
+    var img=document.createElement("img");
+    img.src=ele.src
+    var h2=document.createElement("h2");
+    h2.innerText=ele.name;
+    box.append(img,h2)
+    document.querySelector("#Image_Section").append(box)
+  })
+
+}
+  var arr=[]
+  function order(){
+    var input=document.querySelectorAll("input")
+   input.forEach(function(ele){
+    if(ele.checked){
+        obj={
+            name:ele.value,
+            src:ele.src,
+        }
+        arr.push(obj)
+    }
+   })
+   localStorage.setItem("orderdata",JSON.stringify(arr))
+window.location.reload()
+
+  }
+  
+  var donaldData=JSON.parse(localStorage.getItem("orderata"));
+console.log(donaldData)
+    var mcdonald= new Promise(function(resolve,reject){
+        setTimeout(  function (){
+           Orderfood() 
+      },1000)
+    })
+
+
+
+     mcdonald.then(function(result){
+         console.log(result)
+     }).catch(function(error){
+         console.log(error)
+     })
+
+
+
+  </script>
+</html>

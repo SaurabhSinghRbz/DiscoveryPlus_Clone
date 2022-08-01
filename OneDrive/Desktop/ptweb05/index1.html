@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+    #buttons  div{
+      border:1px solid black;
+      height: 300px;
+      width: 300px;
+     
+    }
+    #buttons{
+      display: flex;
+    }
+   button{
+      justify-content: space-between;
+      margin: 100px;
+      margin-top: 20px;
+   }
+    
+    </style>
+  </head>
+  <body>
+    <div id="buttons">
+      <!--Create buttons namely “Scope”, “Hoisting”, ‘Constructor Functions’, ‘Prototype’ in index.html. Each button will have it's respective name as HTML id. For e.g Scope button will HTML id as "scope". ( Note: no capital letter in id )-->
+      <div  id="scope">
+        
+      </div>
+
+    
+      <div id="hoisting">
+  
+       
+      </div>
+
+    
+    <div id="constructor">
+    
+    </video>
+      
+    </div>
+   
+    
+    <div id="prototype" >
+    
+      </video>
+      
+    </div>
+    
+   
+
+   </div>
+   <button onclick="Scope()">Scope</button>
+   <button  onclick="Hoisting()">Hoisting</button>
+     
+   <button  onclick="ConstructorFun()">Constrctor Functions</button>
+   
+   <button  onclick="Prototype()">Prototype</button>
+  </body>
+  <script>
+   function Scope(){
+   var scope=" Scope determines the visibility and accessibility of a variable. JavaScript has three scopes: \n 1.Global scope  \n 2. local scope \n 3. Block scope \n 1. Global scope:-In a programming environment, the global scope is the scope that contains, and is visible in, all other scopes \n 2.Local scope is a characteristic of variables that makes them local \n 3.Block Level Scope: This scope restricts the variable that is declared inside a specific block, from access by the outside of the block. The let & const keyword facilitates the variables to be block scoped"
+   localStorage.setItem("scope",JSON.stringify(scope))
+   var scope1=JSON.parse(localStorage.getItem("scope")) || []
+   document.getElementById("scope").innerText=scope1
+  
+   }
+   function Hoisting(){
+      var Hoisting="Hoisting in JavaScript is a behavior in which a function or a variable can be used before declaration. For example, // using test before declaring console.log(test); // undefined var test; Run Code. The above program works and the output will be undefined \n One of the benefits of hoisting is that it enables us to call functions before they appear in the code."
+     localStorage.setItem("hoisting",JSON.stringify(Hoisting))
+   var Hoisting1=JSON.parse(localStorage.getItem("hoisting")) || []
+   document.getElementById("hoisting").innerText=Hoisting1
+   }
+   function ConstructorFun(){
+      var constr="A constructor is a special function that creates and initializes an object instance of a class. In JavaScript, a constructor gets called when an object is created using the new keyword. The purpose of a constructor is to create a new object and set values for any existing object properties."
+      localStorage.setItem("constructorfun",JSON.stringify(constr))
+   var constr1=JSON.parse(localStorage.getItem("constructorfun")) || []
+   document.getElementById("constructor").innerText=constr1
+   }
+   function Prototype(){
+      var prot="A prototype-based language, such as JavaScript, does not make this distinction: it has objects. A prototype-based language has the notion of a prototypical object, an object used as a template from which to get the initial properties for a new object.29-Jun-2022"
+     localStorage.setItem("prototype",JSON.stringify(prot))
+   var prot1=JSON.parse(localStorage.getItem("prototype")) || []
+   document.getElementById("prototype").innerText=prot1
+   }
+
+  </script>
+</html>

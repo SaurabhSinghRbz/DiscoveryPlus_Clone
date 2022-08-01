@@ -1,0 +1,39 @@
+#navbar{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid black;
+}
+button{
+    background-color: green;
+    padding: 10px;
+}
+#items{
+    display: flex;
+    flex-direction: column;
+     width: 50%;
+     border: 1px solid black;
+     margin-top: 20px;
+     height: 400px;
+    
+    }
+    #main{
+        display: flex;
+    }
+    #display{
+       margin: 100px 100px 200px 300px;
+    }
+    #D{
+        margin-left: 100px;
+        width: 50%;
+        border: 1px solid black;
+        margin-top: 20px;
+        height: 400px;
+    }
+
+label{
+    font-size: 20px;
+}
+img{
+width:100px;
+height: 100px;
+}

@@ -1,0 +1,43 @@
+#Navbar{
+    height:70px;
+    width: 90%;
+    margin: auto;
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-end;
+}
+#Navbar div{
+   
+    margin: 30px;
+ 
+
+}
+a{
+    justify-content: right;
+}
+#main{
+    border: 1px solid blue;
+    width: 95%;
+    height:700px;
+}
+#signup-form-div{
+ 
+ 
+    border:  1px solid black;
+    margin: 50px;
+    width: 40%;
+    margin: auto;
+    height: 400px;
+}
+#Sign_up{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+input{
+    padding: 15px;
+    gap:20px;
+}
+
+
+

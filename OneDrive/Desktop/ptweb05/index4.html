@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dice game</title>
+    <style>
+       div{
+        border :1px solid black;
+        display: block;
+       }
+       #member-1{
+         font-size: 25px;
+         padding: 25px;
+       }
+       #member-2{
+           font-size:25px;
+           padding: 25px;
+      }
+      #member-3{
+         font-size:25px;
+         padding: 25px;
+      }
+      .container{
+         display: flex;
+         gap:30px;
+      }
+    </style>
+</head>
+<body>
+        <div >
+            <h1>WINNER</h1>
+            <h2 id="winner"></h2>
+         </div>
+   <div class="container">
+    <label for="">Member-1</label>
+      <div id="member-1">
+     
+      </div>
+   </div>
+   <div class="container">
+      <label for="">Member-2</label>
+        <div id="member-2">
+       
+        </div>
+     </div>
+     <div class="container">
+      <label for="">Member-3</label>
+        <div id="member-3">
+       
+        </div>
+     </div>
+        
+
+  
+     <button id="roll" onclick="dice()">ROLL THE DICE</button>
+     <script>
+        function dice(){
+         var arr=[]
+     let x = Math.floor((Math.random() *6)+1);
+      document.getElementById("member-1").innerText = x;
+      arr.push(x)
+        
+        let y = Math.floor((Math.random() *6)+1);
+      document.getElementById("member-2").innerText = y;
+      arr.push(y)
+        let z= Math.floor((Math.random() *6)+1);
+      document.getElementById("member-3").innerText = z ;
+      arr.push(z)
+      var str=["dice1","dice2","dice3"]
+      var max=0;
+      var index;
+        for(var i=0; i<arr.length; i++){
+          if(arr[i]>max){
+            max=arr[i]
+            index=i
+          }
+        }
+        document.getElementById("winner").innerText=str[index]
+       // green
+       if((x>y && x>z) && (x>y && y>z)){
+      document.getElementById("member-1").style.backgroundColor="green"
+      document.getElementById("member-2").style.backgroundColor="yellow"
+      document.getElementById("member-3").style.backgroundColor="red"
+         
+       }
+      if((y>x && y>z) && (y>x && x>z)){
+      document.getElementById("member-2").style.backgroundColor="green"
+      document.getElementById("member-1").style.backgroundColor="yellow"
+      document.getElementById("member-3").style.backgroundColor="red"
+
+       }
+        if((z>y && z>x) && (z>y && y>x)){
+      document.getElementById("member-3").style.backgroundColor="green"
+      document.getElementById("member-2").style.backgroundColor="yellow"
+      document.getElementById("member-1").style.backgroundColor="red"
+
+       }
+    
+   
+
+       if(x==y==z){
+         document.getElementById("member-1").style.backgroundColor="blue"
+         document.getElementById("member-2").style.backgroundColor="blue"
+         document.getElementById("member-3").style.backgroundColor="blue"
+       }
+      
+   
+   
+   
+        }
+    
+
+      
+    
+
+     </script>
+    
+</body>
+</html>

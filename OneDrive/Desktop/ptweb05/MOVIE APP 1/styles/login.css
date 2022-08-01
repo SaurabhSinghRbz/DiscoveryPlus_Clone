@@ -1,0 +1,36 @@
+#Navbar{
+    height:70px;
+    width: 90%;
+    margin: auto;
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-end;
+}
+#Navbar div{
+   
+    margin: 30px;
+ 
+
+}
+a{
+    justify-content: right;
+}
+
+#login-form-div{
+ 
+ 
+    border:  1px solid black;
+    margin: 50px;
+    width: 40%;
+    margin: auto;
+    height: 400px;
+}
+#Login{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+input{
+    padding: 15px;
+    gap:20px;
+}

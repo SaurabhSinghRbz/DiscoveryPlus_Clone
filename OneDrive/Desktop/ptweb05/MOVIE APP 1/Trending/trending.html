@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Movie Search </title>
+       <style>
+        h1{
+        text-align: center;
+        }
+        
+        
+       </style>
+    </head>
+
+    <body>
+       
+   <h1>TRENDING MOVIE PAGE</h1>
+  <div id="movies"></div>
+ 
+<div id="movieContainer"></div>
+    </body>
+    <script>
+     let API_KEY="d3626af5bf59c946cfd07751b1d4b665";
+  async function getData(){
+    try{ 
+    let response = await fetch(`https://api.themoviedb.org/3/trending/movie/day?api_key=${API_KEY}`);
+    let data = await response.json();
+    console.log(data.results);
+    displaydata(data.results);
+    }catch(err){
+        console.log(err);
+    }
+} 
+  getData()
+  function displaydata(data){
+    data.forEach((movie) => {
+        let movieCard = document.createElement("div");
+        let title = document.createElement("p");
+        title.innerText = movie.title;
+        movieCard.append(title);
+        document.getElementById("movieContainer").append(movieCard);
+    })
+}
+
+  
+    </script>
+
+</html>

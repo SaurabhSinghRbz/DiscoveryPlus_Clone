@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINI JS LERNING APP</title>
+    <style>
+       #main div{
+            width: 100px;
+            height:100px;
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+    <div>
+        <div  id="scope">
+           
+        </div>
+        <button onclick="Scope()">Scope</button>
+    </div>
+   <div>
+    <div id="hoisting"></div>
+    <button  onclick="Hoisting()">Hoisting</button>
+   </div>
+    
+   <div>
+    <div id="constructor"></div>
+     
+    <button  onclick="ConstructorFun()">Constrctor Functions</button>
+   </div>
+   <div>
+
+    <div id="prototype" ></div>
+    
+   
+    <button  onclick="Prototype()">Prototype</button>
+   </div>
+</div>
+    
+</body>
+<script>
+    function Scope(){
+        document.getElementById("scope").innerText="Before ES6 2015"
+    }
+</script>
+</html>
