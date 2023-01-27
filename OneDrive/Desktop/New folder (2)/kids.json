@@ -1,0 +1,103 @@
+{
+    "Singham":[
+        {
+            "id":1,
+            "img": "shorturl.at/bhyR1",
+            "title": "Little Singham: Kaal ka Badla ",
+            "dis": " A nine-year-old boy battles evil villains that are out to create chaos."
+        },
+        {
+            "id":2,
+            "img": "https://bit.ly/3jF1r9v",
+            "title":"Little Singham Aur Kaal Ki Shatir Chaal",
+            "dis": "A nine-year-old boy battles evil villains that are out to create chaos."
+        },
+        {
+            "id":3,
+            "img": "https://bit.ly/3QbpJnJ",
+            "title": "Little Singham Kaal Ki Tabaahi",
+            "dis": "A nine-year-old boy battles evil villains that are out to create chaos."
+        },
+        {
+            "id":4,
+            "img": " https://bit.ly/3Q8j1iq",
+            "title":"Kaal Bana Vishkaal",
+            "dis": "A nine-year-old boy battles evil villains that are out to create chaos."
+        },
+        {
+            "id":5,
+            "img": " https://bit.ly/3ig15ps",
+            "title":"Return of Little Singham",
+            "dis": "A nine-year-old boy battles evil villains that are out to create chaos."
+        },
+        {
+            "id":6,
+            "img":" https://bit.ly/3i79ICO",
+            "title":" Kans aur Kaal ka Raaj",
+            "dis": "A nine-year-old boy battles evil villains that are out to create chaos."
+        },
+        {
+            "id":7,
+            "img": " https://bit.ly/3VHYRNx",
+            "title":"Little Singham Aur Kaal Ka Mahajaal",
+            "dis": "Little Singham battles evil villains that are out to create chaos."
+        },
+        {
+            "id":8,
+            "img":"https://bit.ly/3CkRLHI",
+            "title":" Mahasangraam: Miniseries",
+            "dis": "A nine-year-old boy battles evil villains that are out to create chaos."
+        } 
+    ],
+    "Watching":[
+        {
+            "id":1,
+            "img":"https://bit.ly/3VGxXW4",
+            "title":"Little Singham",
+            "dis":"A nine-year-old boy battles evil villains that are out to create chaos. " 
+        },
+        {
+            "id":2,
+            "img": "https://bit.ly/3jMpQdu ",
+            "title":" Fukrey Boyzzz",
+            "dis": "Choocha, Hunny and Laali are kids with limited means but great dreams. "
+        },
+        {
+            "id":3,
+            "img": "https://bit.ly/3Z8aC2q ",
+            "title":" Oggy and the Cockroaches",
+            "dis": "A housecat is tormented by three nasty cockroaches. "
+        },
+        {
+            "id":4,
+            "img": "https://bit.ly/3Q9Dbsk ",
+            "title":"CoComelon ",
+            "dis": "Baby JJ and his siblings go on fun everyday adventures set to catchy songs. "
+        },
+        {
+            "id":5,
+            "img": " https://bit.ly/3Z6UG0v",
+            "title":"Mr. Bean: The Animated Series ",
+            "dis": " Mr. Bean, his best friend Teddy and his landlady have zany mishaps."
+        },
+        {
+            "id":6,
+            "img": "https://bit.ly/3Qcj1xT ",
+            "title":"Kaal Bana Vishkaal ",
+            "dis": "A nine-year-old boy battles evil villains that are out to create chaos. "
+        },
+        {
+            "id":7,
+            "img": "https://ap2-prod-images.disco-api.com/2021/02/10/70034152-5608-4ec2-804f-405ba8513204.jpeg?bf=0&f=jpg&p=true&q=85&w=1000 ",
+            "title":"Kisna ",
+            "dis": "Kisna and his ability to solve problems with friends leads to adventures. "
+        },
+        {
+            "id":8,
+            "img": "https://ap2-prod-images.disco-api.com/2022/11/29/6b84d768-a74b-468d-a38a-d8a25cd94981.jpeg?bf=0&f=jpg&p=true&q=85&w=1000 ",
+            "title":"Bunty, Billa aur Babban ",
+            "dis": " A cat tries every trick in the book to get rid of a resourceful parrot."
+        }
+        
+    ]
+}

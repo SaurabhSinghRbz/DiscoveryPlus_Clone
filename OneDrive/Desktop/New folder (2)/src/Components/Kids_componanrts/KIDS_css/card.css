@@ -1,0 +1,79 @@
+
+.card_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    max-width: fit-content;
+    min-width: 350px;
+    overflow-x: hidden;
+   
+    
+}
+.content_img{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+    height: 192px
+}
+.content_img:hover img{
+    opacity: 0.3;
+}
+
+/* Child Text Container */
+.content_img div{
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    
+   color: white;
+    margin-bottom: 0px;
+    font-family: sans-serif;
+    opacity: 5;
+    line-height: 15px;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear; 
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+/* Hover on Parent Container */
+.content_img:hover{
+    cursor: pointer;
+}
+
+.content_img:hover div{
+    width: 100%;
+    padding: 5px;
+    visibility: visible;
+    opacity: 10;
+    
+   
+   
+}
+
+.play_btn{
+  
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    
+    
+} 
+i{
+    color:  white;
+    background-color: black;
+    border-radius: 50%;
+    
+}
+.hide_title{
+
+    background-color: rgba(60, 60, 60, 0.537);
+    margin-top: 5;
+}

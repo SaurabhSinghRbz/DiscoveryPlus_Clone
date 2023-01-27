@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Raleway", sans-serif, Arial, sans-serif;
+  }
+}
+
+#root {
+  background: linear-gradient(black 25%, black 15%);
+  min-height: 100vh;
+}
+
+body {
+  background:black;
+}
+
+.nav {
+  z-index: 10;
+}
+
+.link-underline {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#fff, #fff);
+  background-size: 0 3px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s ease-in-out;
+}
+
+.link-underline-black {
+  /* background-image: linear-gradient(transparent, transparent), linear-gradient(#F2C, rgb(60, 34, 255)) */
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#000, #fff);
+}
+
+.link-underline:hover {
+  background-size: 100% 3px;
+  background-position: 0 100%;
+  line-height: 1.2;
+}
+
+.portfolio,
+.contact {
+  margin-top: 8%;
+}
+
+.experience {
+  margin-top: 12%;
+}
+
+
+.nav-links {
+  text-underline-offset: 1rem;
+}
+
+
+@media screen and (max-width: 900px) {
+
+  #root {
+    background: linear-gradient( black 20%, black 25%);
+    min-height: 100vh;
+  }
+
+  .about,
+  .contact,
+  .portfolio,
+  .experience,
+  .home {
+    text-align: center;
+    height: 100%;
+  }
+
+  .about,
+  .portfolio,
+  .experience {
+    margin-top: 10%;
+  }
+
+  .home img {
+    margin-top: 25%;
+  }
+
+  .small-screen {
+    display: block;
+  }
+
+  .big-screen {
+    display: none;
+  }
+
+  .gap-8 {
+    gap: 4rem;
+  }
+
+  .home h2 {
+    font-size: 2.7rem;
+    line-height: 3rem;
+    margin-top: 7%;
+  }
+
+  .portfolio-btn {
+    margin: auto;
+  }
+
+  .px-12 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+}
