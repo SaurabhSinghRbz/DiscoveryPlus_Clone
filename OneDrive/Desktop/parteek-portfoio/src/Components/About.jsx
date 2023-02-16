@@ -19,9 +19,12 @@ const About = () => {
 
         <div className="p-10 border-2 shadow-2xl shadow-orange-500/100 bg-black">
         <p className="text-2xl font-medium">
-        Aspiring MERN Developer with the ability to collaborate effectively and passionately. Enjoy working closely with team members. Proficient in React and Redux.
+        Full-Stack development program graduate adept at playing a key role in conceptualizing, designing, and optimizing E-commerce websites as part of enhancing user experience. Proficient in streamlining features & functionalities in collaboration with the team to deliver complete solutions. 
         </p>      
-    
+       {/* <br />
+        <p className="text-lg">
+         Proficient in  CODING Passionate about implementing and launching new projects. Ability to translate business requirements into technical solutions. Looking to start my career as an entry-level software engineer with a reputed firm driven by technology.
+        </p> */}
         </div>
         </div>
       </div>

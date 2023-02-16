@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
-import resume from "../assets/parteek_kumar_resume.pdf"
+import resume from "../assets/Parteek_Kumar_Resume (2).pdf"
+
 import {BiDownload} from "react-icons/bi"
 
 const NavBar = () => {
@@ -11,38 +12,32 @@ const NavBar = () => {
     {
       id: 1,
       link: "home",
-      class:"nav-link home"
     },
     {
       id: 2,
       link: "about",
-      class:"nav-link about"
     },
     {
       id: 3,
       link: "projects",
-      class:"nav-link projects"
     },
     {
       id: 4,
       link: "skills",
-      class:"nav-link skills"
     },
     {
       id: 5,
       link: "statistics",
-      class:"nav-link resume"
     },
     {
       id: 6,
       link: "contact",
-      class:"nav-link contact"
     },
   
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-black font-bold fixed nav bg-blue-600 to-blue-700">
+    <div className="flex justify-between items-center w-full h-20 px-4 text-black font-bold fixed nav bg-orange-600 to-orange-700">
       <div>
        
         <h1 className="text-5xl shadow-lg shadow-black font-style: italic ml-2"><a className="cursor-pointer link-underline link-underline-black" target="_blank" rel="noreferrer">PK</a></h1>
@@ -67,7 +62,6 @@ const NavBar = () => {
           href={resume}
           download={true}
            target="_blank"
-           id="resume-link-1"
           // rel="noreferrer"
           >
             Resume</a></li>
@@ -76,7 +70,6 @@ const NavBar = () => {
       <div
         onClick={() => setNav(!nav)}
         className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
-
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
@@ -94,7 +87,6 @@ const NavBar = () => {
                 to={link}
                 smooth
                 duration={500}
-                id="resume-link-1"
               >
                 {link}
                 

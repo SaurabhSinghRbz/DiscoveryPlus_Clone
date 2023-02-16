@@ -67,21 +67,19 @@ const Portfolio = () => {
                 alt="projects"
                 className="rounded-md h-72 w-full duration-200 hover:scale-105"
               />
-              <div className="text-center	pt-4 text-orange-500 font-bold	font-mono text-2xl	"  class="project-title">{title}</div>
-             <div className="text-center pt-4 text-slate-300	font-medium	text-xl	"  class="project-description"> <p>{desc}</p></div>
-              <p className="text-center pt-4 text-slate-300	font-medium	text-xl	" class="project-tech-stack">Tech Stack: {tech}</p>
+              <div className="text-center	pt-4 text-orange-500 font-bold	font-mono text-2xl	" >{title}</div>
+             <div className="text-center pt-4 text-slate-300	font-medium	text-xl	"> <p>{desc}</p></div>
+              <p className="text-center pt-4 text-slate-300	font-medium	text-xl	">Tech Stack: {tech}</p>
               <div className="flex items-center justify-center">
                 <button
                   className="w-1/4 px-6 py-3 m-4  px-6 py-3 my-8 mx-auto flex justify-center items-center rounded-md bg-gradient-to-b from-orange-600 to-orange-700 hover:bg-white duration-300 bg-orange-700 hover:scale-105"
                   onClick={() => window.open(link, "_blank")}
-                  class="project-github-link"
                 >
                   Demo
                 </button>
                 <button
                   className="w-1/4 px-6 py-3 m-4 bg-gradient-to-b from-orange-600 to-orange-700 px-6 py-3 my-8 mx-auto flex justify-center items-center rounded-md hover:scale-110 duration-300 bg-orange-700 hover:scale-105"
                   onClick={() => window.open(repo, "_blank")}
-                  class="project-deployed-link"
                 >
                   GitHub
                 </button>

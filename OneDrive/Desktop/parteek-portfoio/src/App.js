@@ -12,15 +12,15 @@ import Tools from "./Components/Tools";
 function App() {
   return (
     <div>
-      <NavBar  id="nav-menu" />
-      <Home id="home"/>
-      <About  id="about" class="about section" />
-     <Portfolio id="projects"/>
+      <NavBar />
+      <Home />
+      <About />
+     <Portfolio />
      
-      <Skills id="skills" />
+      <Skills />
       <Tools/>
       <Statistics/>
-      <Contact  id="contact" />
+      <Contact />
         <SocialLinks />
       <Footer />
     
