@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #inner{
+        width:30%;
+        margin:auto;
+        border:1px solid black;
+        margin-top: 50px;
+        height: 500px;
+      }
+      input{
+        padding:10px;
+        width:80%;
+        border-radius: 5px;
+        border: 1px solid gray;
+        margin: auto;
+        font: 400;
+        color: gray;
+        justify-content: center;
+        margin:10px 0 10px 10px;
+      }
+      h2{
+        text-align: center;
+      }
+      label{
+        margin-bottom: 10px;
+      }
+      
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="inner">
+            <h2>Sign Up</h2>
+          <form>
+            <label for="f_Name">Full name</label>
+            </br>
+            <input type="text"   placeholder="Enter Full Name" id="name"/>
+            </br>
+            <label for="ph">phone number or email address</label>
+             </br>
+            <input type="text" placeholder="Enter phone number or email address" id="email"/>
+           <input  type="submit" value="signup"/>
+
+        </form>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",savedata)
+    let userdata=JSON.parse(localStorage.getItem("data")) || []
+    
+    function savedata(){
+      
+        event.preventDefault()
+       var UserObj = {
+        name :document.getElementById("name").value,
+        EmorPh :document.getElementById("email").value,
+       }
+     userdata.push(UserObj)
+      localStorage.setItem("data",JSON.stringify(userdata))
+    
+    }
+</script>
