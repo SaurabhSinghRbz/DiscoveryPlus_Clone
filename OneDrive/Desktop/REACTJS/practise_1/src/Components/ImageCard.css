@@ -1,0 +1,23 @@
+.imagecard{
+border:1px solid black;
+width:auto;
+height: auto;
+margin: 20px;
+border-radius: 5px;
+justify-content: stretch;
+cursor: pointer;
+}
+.imagecard:hover{
+    color:red;
+}
+.bottom{
+    width: auto;
+    height: auto;
+}
+.ImageSize{
+   width: 100%;
+   height: 150px;
+   background-color: grey;
+   border:1px solid black;
+}
+

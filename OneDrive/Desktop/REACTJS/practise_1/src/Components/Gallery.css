@@ -1,0 +1,23 @@
+.Container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 20px;
+    
+}
+
+@media all and (min-width:451px) and (max-width:850px){
+    .Container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 20px;
+        
+    }
+}
+@media all and (min-width:80px) and (max-width:450px){
+    .Container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+        
+    }
+}
